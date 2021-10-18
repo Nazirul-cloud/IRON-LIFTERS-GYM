@@ -1,0 +1,45 @@
+
+[
+    {
+        "id": 1,
+        "name": "METCON.",
+        "price": "300",
+        "description": "Our Metabolic Conditioning classes are fast-paced and high intensity. They challenge your cardiovascular capacity and send your metabolism rocketing to rapidly burn fat.",
+        "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/man-using-medicine-ball-at-cross-training-gym-royalty-free-image-1600364785.jpg?resize=640:*"
+    },
+    {
+        "id": 2,
+        "name": "HARD-CORE",
+        "price": "100",
+        "description": "Hard-Core is our functional core training class to deliver power, strength and stabilisation. It is very popular at FWX Gyms with both men and women!",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaUS30J0V6UgskrXFcqAHc9_Qhu0CWwbwMGg&usqp=CAU"
+    },
+    {
+        "id": 3,
+        "name": "TRANSCEND",
+        "price": "150",
+        "description": "NEW for 2020/2021 - Go beyond your limits. Be SUPREME. Our ultra hardcore workout class to test your strength and stamina on an array of circuits.",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQof7hN5_pCiEonR1g5Q9-3MApju79GwxbNdg&usqp=CAU"
+    },
+    {
+        "id": 4,
+        "name": "LIFTING CLUB",
+        "price": "180",
+        "description": "A strength-based class to help you improve technique and give you a workout!!",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTFT43isvG4AweC8dKEMJcua1jsFWpDFBsVg&usqp=CAU"
+    },
+    {
+        "id": 5,
+        "name": "CYCLE WORX",
+        "price": "100",
+        "description": "Feel the VIBE at a FWX Spin Class at Kenilworth or Southam.. We bring a slight twist to the blacked-out disco room!",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiUHul4JyFxEB3fb06ejxqPzjO9F0lBdY_Zg&usqp=CAU"
+    },
+    {
+        "id": 6,
+        "name": "STRENGTH CAMP",
+        "price": "300",
+        "description": "FWX's Trademarked strength training class for small groups. Learn how to lift and get REAL RESULTS! - Life is better when you're stronger.",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Mif2JjN0hPUWJwxjWE17yTnrhz4pzrv4eA&usqp=CAU"
+    }
+]
