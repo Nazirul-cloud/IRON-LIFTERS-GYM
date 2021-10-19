@@ -8,10 +8,10 @@ import Categorys from '../Categories/Categorys';
 const Home = () => {
     return (
         <div>
-            <Header></Header>
+       
             <Banner></Banner>
             <Categorys/>
-            <Footer></Footer>
+           
         </div>
     );
 };

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaUserPlus } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const SignUp = () => {
     return (
@@ -27,10 +28,12 @@ const SignUp = () => {
                     <input type="password" className="form-control" placeholder="Enter password" />
                 </div>
 
-                <button type="submit" className="btn btn-primary btn-block mt-2">Sign Up</button>
-                <p className="forgot-password text-right">
+                <input type="submit" value="Submit" className="btn btn-primary btn-block mt-2"/>
+                <br />
+                <Link to="/login">Already Registered?</Link>
+                {/* <p className="forgot-password text-right">
                     Already registered <a href="#">sign in?</a>
-                </p>
+                </p> */}
             </form>
         </div>
     );
