@@ -8,10 +8,8 @@ const SignUp = () => {
         <div className="m-5 d-flex justify-content-center">
               <div className="w-50 p-4">
                 
-
-
               <form onSubmit={handleRegistration}>
-        <h3 className="text-primary"> {isLogin ?  'Login' : 'Signup'}</h3>
+        <h3 className="text-primary mb-4"> {isLogin ?  'Login' : 'Sign Up'}</h3>
         {!isLogin && <div className="row mb-3">
           <label htmlFor="inputName" className="col-sm-2 col-form-label">Name</label>
           <div className="col-sm-10">
@@ -30,13 +28,11 @@ const SignUp = () => {
             <input type="password" onBlur={handlePasswordChange} className="form-control" id="inputPassword3" required />
           </div>
         </div>
-        <div className="row mb-3">
+        <div className="mb-3">
           <div className="col-sm-10 offset-sm-2">
             <div className="form-check">
               <input onChange={toggleLogin} className="form-check-input" type="checkbox" id="gridCheck1" />
-              <label className="form-check-label" htmlFor="gridCheck1">
-                Already Registered?
-              </label>
+              <small>Already user?</small>
             </div>
           </div>
         </div>
@@ -46,12 +42,7 @@ const SignUp = () => {
         </button>
       </form>
 
-      <button onClick={signInUsingGoogle} size="sm" type="submit" className="btn w-50 btn-danger mt-2 mb-2"><FcGoogle/> Continue with 	Google</button>
-
-
-
-
-               
+      <button onClick={signInUsingGoogle} size="sm" type="submit" className="btn w-50 btn-danger mt-2 mb-2"><FcGoogle/> Continue with Google</button>
             </div>
         </div>
     );

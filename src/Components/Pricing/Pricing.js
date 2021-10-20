@@ -11,7 +11,7 @@ const Pricing = () => {
                 <small className="text-dark">These reports started to surface when Congress was having hearings about the painkiller, Vioxx. A Food and Drug Administration staff member.</small>
             </div>
 
-            <Row xs={1} md={3} className="gx-5 m-4">
+            <Row xs={1} md={3} className="gx-5 m-4 mb-5">
                 <Card className="text-center">
                     <Card.Header className="fw-bold text-danger">NORMAL</Card.Header>
                     <Card.Body>

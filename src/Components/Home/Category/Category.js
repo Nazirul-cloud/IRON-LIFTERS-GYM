@@ -3,7 +3,7 @@ import { Card, Col, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Category = ({category}) => {
-    const { id, name, price, description, img } = category;
+    const { id, name, description, img } = category;
 
     return (
      
@@ -15,7 +15,7 @@ const Category = ({category}) => {
                         <Card.Text>
                             {description}
                         </Card.Text>
-                        <Link to={`/details/${description}`}> 
+                        <Link to={`/details/${id}`}> 
                            <Button size="sm" variant="outline-danger">READ MORE</Button>
                         </Link>
                         

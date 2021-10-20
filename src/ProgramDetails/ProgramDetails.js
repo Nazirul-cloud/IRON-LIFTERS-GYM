@@ -5,24 +5,33 @@ const ProgramDetails = () => {
     const {detailsId} = useParams();
    
     const [programs, setPrograms] = useState([]);
-    // const [detail, setDetail] = useState([]);
+    const [details, setDetails] = useState({});
 
     useEffect(() =>{
-        fetch('../Category.json')
+        fetch('/Category.json')
         .then( res => res.json())
         .then(data => setPrograms(data))
     } ,[]);
 
     useEffect( ()=>{
-        const singleProgram = programs?.find(program => program.id === detailsId  ); //I will try my best but i can't 
-        // setDetails(singleProgram); 
-        console.log(singleProgram);
-
-    },[])
+        const programDetails = programs.find(program => program.id == detailsId  ); 
+        // console.log(programDetails);
+        setDetails(programDetails); 
+     
+    },[programs]);
 
     return (
-        <div>
-            <h2 className="m-5">This is Program Details {detailsId}</h2>
+        <div className="p-5 m-5 border border-danger">
+            <small className="btn pb-5 bg-light">This is program - {detailsId}</small>
+          <div className="d-flex">
+            <div>
+                <img width="450px" src={details?.img} alt="" />
+            </div>
+            <div className="p-5">
+                    <h2>{details?.name}</h2>
+                    <p>{details?.description}</p>
+            </div>
+          </div>
         </div>
     );
 };

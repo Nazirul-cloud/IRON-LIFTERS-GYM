@@ -11,9 +11,9 @@ const Trainer = () => {
         <h2 className="fw-bold fs-2 text-danger">CHOOSE YOUR PRICING PLAN</h2>
         <small className="text-dark">These reports started to surface when Congress was having hearings about the painkiller, Vioxx. A Food and Drug Administration staff member.</small>
         </div>
-
+        <div className=" d-flex justify-content-center">
         <Row xs={1} md={3} className="gx-5 m-5">
-            <Card className="text-center mx-4" style={{ width: '18rem' }}>
+            <Card className="mx-4" style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={trainer1} />
                 <Card.Body>
                     <Card.Title className="fw-bold">Noah Leonard <small>- Trainer</small></Card.Title>
@@ -40,8 +40,8 @@ const Trainer = () => {
                     </Card.Text>
                 </Card.Body>
             </Card>
-            
         </Row>
+        </div>
         </div>
     );
 };

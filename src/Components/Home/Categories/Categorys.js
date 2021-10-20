@@ -19,7 +19,7 @@ const Categorys = () => {
 
     return (
         <div style={programStyle} className="pb-5">
-            <div id="#cata" className="text-center pt-5 pb-4" >
+            <div className="text-center pt-5 pb-4" >
                 <h2 className="fw-bold fs-2 text-danger">CHOOSE YOUR PROGRAM</h2>
                 <small className="text-light">Our Iron Lifters experts can help you discover new training techniques and exercises that offer a dynamic and efficient full-body workout.</small>
             </div>
