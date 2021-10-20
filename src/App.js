@@ -7,7 +7,6 @@ import {
   Link
 } from "react-router-dom";
 import Home from './Components/Home/Home/Home';
-import Login from './Components/Login/Login/Login';
 import NotFound from './Components/NotFound/NotFound';
 import SignUp from './Components/Login/SignUp/SignUp';
 import Header from './Components/Shared/Header/Header';
@@ -15,6 +14,8 @@ import Footer from './Components/Shared/Footer/Footer';
 import Pricing from './Components/Pricing/Pricing';
 import Trainer from './Components/Trainer/Trainer';
 import AuthProvider from './contexts/AuthProvider';
+import PrivateRoute from './Components/Login/PrivateRoute/PrivateRoute';
+import ProgramDetails from './ProgramDetails/ProgramDetails';
 
 
 
@@ -31,18 +32,18 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            <Route path="/pricing">
+            <PrivateRoute path="/pricing">
               <Pricing></Pricing>
-            </Route>
+            </PrivateRoute>
             <Route path="/trainer">
               <Trainer></Trainer>
-            </Route>
-            <Route path="/login">
-              <Login></Login>
             </Route>
             <Route path="/signup">
               <SignUp></SignUp>
             </Route>
+            <PrivateRoute path="/details/:detailsId">
+              <ProgramDetails></ProgramDetails>
+            </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>
             </Route>

@@ -23,7 +23,7 @@ const Categorys = () => {
                 <h2 className="fw-bold fs-2 text-danger">CHOOSE YOUR PROGRAM</h2>
                 <small className="text-light">Our Iron Lifters experts can help you discover new training techniques and exercises that offer a dynamic and efficient full-body workout.</small>
             </div>
-            <Row xs={1} md={3} className="g-1">
+            <Row xs={1} md={3} className="g-5 m-3 ">
               {
                   categories.map(category => <Category 
                     key  ={category.id}
